@@ -12,24 +12,7 @@
     
         <asp:Button ID="btnUpdateAllTournaments" runat="server" onclick="btnUpdateAllTournaments_Click" Text="Button" />
     
-       <table border="1">
-    <thead>
-        <tr>
-            <%foreach (System.Data.DataColumn col in dt.columns) { %>
-                <th><%=col.Caption %></th>
-            <%} %>
-        </tr>
-    </thead>
-    <tbody>
-    <% foreach(System.Data.DataRow row in dt.Rows) { %>
-        <tr>
-            <% foreach (var cell in row.ItemArray) {%>
-                <td><%=cell.ToString() %></td>
-            <%} %>
-        </tr>
-    <%} %>         
-    </tbody>
-</table>
+     
         
     
     </div>
