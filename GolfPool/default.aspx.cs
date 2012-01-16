@@ -20,6 +20,11 @@ namespace GolfPool
                 Response.Write(f + "<br>");
             }
 
+            foreach(string d in Directory.GetDirectories(MapPath("/")))
+            {
+                Response.Write("dirs: " + d + "<br>");
+            }
+
             Label1.Text = path;
           //  Tournament t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html");
 //
