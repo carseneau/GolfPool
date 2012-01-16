@@ -1,8 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using OpenQA.Selenium;
 
+using System.Collections.Generic;
+
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using OpenQA.Selenium;
 namespace GolfPool
 {
     public class Tournament
@@ -11,11 +17,11 @@ namespace GolfPool
         string url;
         DataTable tournamentresults;
 
-        public Tournament(string tournamenturl)
+        public Tournament(string tournamenturl,string firefoxpath,string firefoxprofilepath)
         {
-          
-            OpenQA.Selenium.Firefox.FirefoxBinary binary = new OpenQA.Selenium.Firefox.FirefoxBinary("..\\FirefoxPortable\\Firefoxportable.exe");
-            OpenQA.Selenium.Firefox.FirefoxProfile profile = new OpenQA.Selenium.Firefox.FirefoxProfile("..\\FirefoxPortable\\App\\DefaultData\\profile");
+                     
+            OpenQA.Selenium.Firefox.FirefoxBinary binary = new OpenQA.Selenium.Firefox.FirefoxBinary(firefoxpath);
+            OpenQA.Selenium.Firefox.FirefoxProfile profile = new OpenQA.Selenium.Firefox.FirefoxProfile(firefoxprofilepath);
             driver = new OpenQA.Selenium.Firefox.FirefoxDriver(binary,profile);
             tournamentresults = new DataTable("tournamentresults");
             tournamentresults.Columns.Add("Golfer",typeof(string));
