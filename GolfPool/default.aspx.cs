@@ -15,7 +15,7 @@ namespace GolfPool
 
             string path = System.Environment.GetEnvironmentVariable("PATH");
 
-            foreach (string f in Directory.GetFiles(MapPath("/lib")))
+            foreach (string f in Directory.GetFiles(MapPath("/")))
             {
                 Response.Write(f);
             }
