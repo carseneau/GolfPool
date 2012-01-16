@@ -15,11 +15,12 @@ namespace GolfPool
     {
         IWebDriver driver;
         string url;
-        DataTable tournamentresults;
+        public DataTable tournamentresults;
+        public bool istournamentresultsdone = false;
 
         public Tournament(string tournamenturl,string firefoxpath,string firefoxprofilepath)
         {
-                     
+            istournamentresultsdone = false;        
             OpenQA.Selenium.Firefox.FirefoxBinary binary = new OpenQA.Selenium.Firefox.FirefoxBinary(firefoxpath);
             OpenQA.Selenium.Firefox.FirefoxProfile profile = new OpenQA.Selenium.Firefox.FirefoxProfile(firefoxprofilepath);
             driver = new OpenQA.Selenium.Firefox.FirefoxDriver(binary,profile);
@@ -29,7 +30,7 @@ namespace GolfPool
             url = tournamenturl;
         }
                 
-        public DataTable getTournamentResults()
+        public void getTournamentResults()
         {
             int i = 1;
             int j = 1;
@@ -54,7 +55,7 @@ namespace GolfPool
                 i++;
             }
             driver.Close();
-            return tournamentresults;
+            istournamentresultsdone = true;
         }
 
         
