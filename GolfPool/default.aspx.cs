@@ -13,19 +13,14 @@ namespace GolfPool
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string path = System.Environment.GetEnvironmentVariable("PATH");
-
-            foreach (string f in Directory.GetFiles(MapPath("/bin")))
-            {
-                Response.Write(f + "<br>");
-            }
+                      
 
             foreach(string d in Directory.GetDirectories(MapPath("/bin")))
             {
                 Response.Write("dirs: " + d + "<br>");
             }
 
-            Label1.Text = path;
+            
           //  Tournament t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html");
 //
           // GridView1.DataSource =  t.getTournamentResults();

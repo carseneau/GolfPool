@@ -10,11 +10,8 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" />
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     
     </div>
     </form>
