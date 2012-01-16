@@ -92,9 +92,9 @@
     <Content Include="FirefoxPortable\App\AppInfo\appicon_32.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="FirefoxPortable\App\Bin\sqlite3.exe">
+    <Resource Include="FirefoxPortable\App\Bin\sqlite3.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
     <Content Include="FirefoxPortable\App\DefaultData\plugins\plugins_readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
