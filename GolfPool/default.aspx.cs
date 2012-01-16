@@ -15,12 +15,12 @@ namespace GolfPool
 
             string path = System.Environment.GetEnvironmentVariable("PATH");
 
-            foreach (string f in Directory.GetFiles(MapPath("/")))
+            foreach (string f in Directory.GetFiles(MapPath("/bin")))
             {
                 Response.Write(f + "<br>");
             }
 
-            foreach(string d in Directory.GetDirectories(MapPath("/")))
+            foreach(string d in Directory.GetDirectories(MapPath("/bin")))
             {
                 Response.Write("dirs: " + d + "<br>");
             }
