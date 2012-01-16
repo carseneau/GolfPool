@@ -15,7 +15,7 @@ namespace GolfPool
             string path = System.Environment.GetEnvironmentVariable("PATH");
             Label1.Text = path;
           //  Tournament t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html");
-
+//
           // GridView1.DataSource =  t.getTournamentResults();
           //GridView1.DataBind();
         }
