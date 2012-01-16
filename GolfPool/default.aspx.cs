@@ -15,7 +15,7 @@ namespace GolfPool
 
                       
 
-            foreach(string d in Directory.GetDirectories(MapPath("/bin")))
+            foreach(string d in Directory.GetDirectories(MapPath("/")))
             {
                 Response.Write("dirs: " + d + "<br>");
             }
