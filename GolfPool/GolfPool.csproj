@@ -268,7 +268,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>xcopy $(ProjectDir)FirefoxPortable $(OutDir) /Y /E</PostBuildEvent>
+    <PostBuildEvent>start /MIN xcopy $(ProjectDir)FirefoxPortable $(OutDir) /Y /E</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
