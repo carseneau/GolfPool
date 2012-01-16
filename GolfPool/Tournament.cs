@@ -10,9 +10,9 @@ namespace GolfPool
         string url;
         DataTable tournamentresults;
 
-        public Tournament(string driverpath, string tournamenturl)
+        public Tournament(string tournamenturl)
         {
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver(driverpath);
+            driver = new OpenQA.Selenium.Firefox.FirefoxDriver();
             tournamentresults = new DataTable("tournamentresults");
             tournamentresults.Columns.Add("Golfer",typeof(string));
             tournamentresults.Columns.Add("Prize", typeof(string));
@@ -43,6 +43,7 @@ namespace GolfPool
                 tournamentresults.Rows.Add(f.FindElements(By.TagName("td"))[0].Text, f.FindElements(By.TagName("td"))[mindex - 1].Text.Replace("$", "").Replace(",", ""));
                 i++;
             }
+            driver.Close();
             return tournamentresults;
         }
 
@@ -68,6 +69,7 @@ namespace GolfPool
                 {
                    //TODO
                 }
+                driver.Close();
             }
             return tournamentresults;
         }

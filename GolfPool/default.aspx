@@ -12,6 +12,8 @@
     
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" />
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     
     </div>
     </form>

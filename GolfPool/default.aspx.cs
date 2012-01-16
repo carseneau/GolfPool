@@ -11,8 +11,10 @@ namespace GolfPool
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-//Tournament t = new Tournament(
-           
+            Tournament t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html");
+
+           GridView1.DataSource =  t.getTournamentResults();
+           GridView1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
