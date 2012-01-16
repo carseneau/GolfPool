@@ -17,7 +17,7 @@ namespace GolfPool
 
             foreach (string f in Directory.GetFiles(MapPath("/")))
             {
-                Response.Write(f);
+                Response.Write(f + "<br>");
             }
 
             Label1.Text = path;
