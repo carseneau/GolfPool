@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace GolfPool
 {
@@ -13,6 +14,12 @@ namespace GolfPool
         {
 
             string path = System.Environment.GetEnvironmentVariable("PATH");
+
+            foreach (string f in Directory.GetFiles(MapPath("/lib/FirefoxPortable")))
+            {
+                Response.Write(f);
+            }
+
             Label1.Text = path;
           //  Tournament t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html");
 //
