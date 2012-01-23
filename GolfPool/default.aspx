@@ -8,9 +8,31 @@
 </head>
 <body>
     <form id="form1" runat="server">
+  
     <div>
     
-    </div>
-    </form>
+        Temp Standings Page<br />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" 
+          
+            style="text-align: center">
+        </asp:GridView>
+       
+
+       
+        <br />
+        <br />
+        Temp Data<asp:GridView ID="GridView2" runat="server">
+        </asp:GridView>
+        <br />
+        <br />
+       
+
+       
+</div>
+
+  
+   
+          </form>
 </body>
 </html>
