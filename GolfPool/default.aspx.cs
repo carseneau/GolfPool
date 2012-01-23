@@ -6,41 +6,37 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 using System.Threading;
-
+using System.Data.SqlClient;
+using System.Configuration;
 namespace GolfPool
 {
     public partial class _default : System.Web.UI.Page
     {
-        Tournament t;
-        bool started = false;
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
-             Response.Write("Pageload " + System.DateTime.Now);
-             if (started == false)
-             {
-
-
-                 t = new Tournament("http://www.pgatour.com/tournaments/r016/results.html", MapPath("/FirefoxPortable/") + "FirefoxPortable.exe", MapPath("/FirefoxPortable/App/DefaultData/profile/"));
-                 Thread tournthread = new Thread(new ThreadStart(t.getTournamentResults));
-                 tournthread.IsBackground = true;
-             }
-                          
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            if (t.istournamentresultsdone == true)
+            if (System.Net.Dns.GetHostEntry(Request.ServerVariables["remote_addr"]).HostName == "craig-THINK")
             {
-                GridView1.DataSource = t.tournamentresults;
+           SqlConnection conn = new SqlConnection("Server=12a5e980-74a4-4c94-a480-9fd70124ef10.sqlserver.sequelizer.com;Database=db12a5e98074a44c94a4809fd70124ef10;User ID=dsscpeteldbsyyzj;Password=4SXf82Dtu5m6YCGKykANoz4SuZqo53EBjr2rLHdpnwTQ7Wt8HztVDphBWeThKpxA;");
+
             }
+
             else
             {
-                Response.Write("not done");
-            }
+                var uriString = ConfigurationManager.AppSettings["SQLSERVER_URI"];
+                var uri = new Uri(uriString);
+                var conn = new SqlConnectionStringBuilder
+                {
+                    DataSource = uri.Host,
+                    InitialCatalog = uri.AbsolutePath.Trim('/'),
+                    UserID = uri.UserInfo.Split(':').First(),
+                    Password = uri.UserInfo.Split(':').Last(),
 
-
-
+                }.ConnectionString;
+            }             
         }
+
+     
     }
 }
