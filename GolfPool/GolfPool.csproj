@@ -52,10 +52,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="Telerik.Web.UI">
-      <HintPath>..\..\..\..\Program Files\Telerik\RadControls for ASP.NET AJAX Q3 2011 SP1\Bin40\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q3 2011 SP1\Bin40\Telerik.Web.UI.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Web.UI.Skins">
-      <HintPath>..\..\..\..\Program Files\Telerik\RadControls for ASP.NET AJAX Q3 2011 SP1\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q3 2011 SP1\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +96,8 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="default.aspx" />
+    <Content Include="Default2.aspx" />
+    <Content Include="style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -114,8 +116,16 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GolfPool.Master.cs">
       <DependentUpon>GolfPool.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GolfPool.Master.designer.cs">
       <DependentUpon>GolfPool.Master</DependentUpon>

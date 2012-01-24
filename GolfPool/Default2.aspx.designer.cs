@@ -10,24 +10,24 @@
 namespace GolfPool {
     
     
-    public partial class GolfPool {
+    public partial class Default2 {
         
         /// <summary>
-        /// form1 control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Content1 control.
+        /// RadGrid1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content1;
+        protected global::Telerik.Web.UI.RadGrid RadGrid1;
     }
 }
