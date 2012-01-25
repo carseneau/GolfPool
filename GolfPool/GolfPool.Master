@@ -8,7 +8,7 @@
 
 <head>
 
-<title>CITY</title>
+<title>Golf Pool 2012</title>
 
 <meta http-equiv="Content-Language" content="English" />
 
@@ -32,7 +32,7 @@
 
 <div id="header">
 
-<h1>&nbsp;</h1>
+ <h1></h1>
 
 </div>
 
@@ -41,21 +41,15 @@
 <div id="content">
 
 <div class="left"> 
-
-
+<h2>Golf Pool 2012</h2>
+<h2>Current Standings</h2>
 <asp:ContentPlaceHolder runat="server" ID="Content1"> </asp:ContentPlaceHolder>
 
-    <h2>Raw Data</h2>
+    <h1>Raw Data</h1>
 
 <div class="articles">
 
-Donec nulla. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada 
 
-et, nulla. Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, 
-
-consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae 
-
-congue nulla diam non urna.
 
 </div>
 
@@ -67,89 +61,19 @@ congue nulla diam non urna.
 
 
 
-<h2>Categories :</h2>
+<h2></h2>
 
 <ul>
 
-<li><a href="http://www.worldclasslasik.com
-
-">World Politics</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">Europe Sport</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">Networking</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">Nature - Africa</a></li>
-
-<li><a href="http://www.worldclasslasik.com
-
-">SuperCool</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">Last Category</a></li>
 
 </ul>
 
 
 
-<h2>Archives</h2>
+<h2></h2>
 
 <ul>
 
-<li><a href="http://www.worldclasslasik.com
-
-">January 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">February 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">March 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">April 2007</a></li>
-
-<li><a href="http://www.worldclasslasik.com
-
-">May 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">June 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">July 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">August 2007</a></li> 
-
-<li><a href="http://www.worldclasslasik.com
-
-">September 2007</a></li>
-
-<li><a href="http://www.worldclasslasik.com
-
-">October 2007</a></li>
-
-<li><a href="http://www.worldclasslasik.com
-
-">November 2007</a></li>
-
-<li><a href="http://www.worldclasslasik.com
-
-">December 2007</a></li>
 
 </ul>
 
@@ -167,7 +91,7 @@ congue nulla diam non urna.
 
 <div id="footer">
 
-Design by <a href="http://www.worldclasslasik.com">new york lasik surgery</a> and <a href="http://www.getnetset.com">cpa website design</a>
+
 
 </div>
 

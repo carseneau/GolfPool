@@ -97,6 +97,7 @@
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="default.aspx" />
     <Content Include="Default2.aspx" />
+    <Content Include="images\banner.jpg" />
     <Content Include="style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

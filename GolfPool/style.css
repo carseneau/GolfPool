@@ -3,7 +3,7 @@ background: #001400 url(images/bottombg.jpg) bottom center no-repeat;
 font-family: Verdana, Arial, Helvetica, sans-serif;
 font-size: 12px;
 line-height: 20px;
-color: #4b4f5e;
+color: #FFFFFF;
 }
 
 a {
@@ -24,7 +24,7 @@ background:#FFFFFF;
 #header {
 width:800px;
 height:210px;
-background:url(images/headerbg.jpg);
+background:url(images/banner.jpg);
 margin: 0;
 padding: 0;
 }
