@@ -97,8 +97,7 @@
     <Content Include="App_Data\RadCaptcha\X.wav" />
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
-    <Content Include="default.aspx" />
-    <Content Include="Default2.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="images\banner.jpg" />
     <Content Include="style.css" />
     <Content Include="Web.config">
@@ -112,19 +111,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default2.aspx.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default2.aspx.designer.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="GolfPool.Master.cs">
       <DependentUpon>GolfPool.Master</DependentUpon>
